@@ -1,8 +1,7 @@
-package DSA.Strings;
+// package DSA.Strings;
 
-import java.util.Scanner;
-
-public class MyStrings {
+import java.lang.String;
+public class MyStr {
     public static void main(String[] args) {
 //        String name = "Shashwat";
 //        System.out.println(name);
@@ -61,15 +60,16 @@ public class MyStrings {
 //        System.out.println(name4==name2);
 //        System.out.println(name1==name4);
 //
-//        String name1 = new String("Shashwat");
-//        String name2 = new String("Shashwat");
-//        String name3 = new String("Shashwat");
-//        String name4 = name1;
-//        System.out.println(name1.equals(name2) );
-//        System.out.println(name2.equals(name3));
-//        System.out.println(name3.equals(name4));
-//        System.out.println(name4.equals(name2));
-//        System.out.println(name1.equals(name4));
+    //    String name1 = new String("Shashwat");
+    //    String name2 = new String("Shashwat");
+    //    String name3 = new String("Shashwat");
+    //    String name4 = name1;
+    //    System.out.println(name1.equals(name2) );
+    //    System.out.println(name2.equals(name3));
+    //    System.out.println(name3.equals(name4));
+    //    System.out.println(name4.equals(name2));
+    //    System.out.println(name1.equals(name4));
+
 //        System.out.println(name1==name2);
 //        System.out.println(name2==name3);
 //        System.out.println(name3==name4);
@@ -161,5 +161,30 @@ public class MyStrings {
 //        System.out.printf("my percentage is %.2f ",percent);
 
 
+        String email1 = "ejazansari456@gmail.com";
+        String email2 = "mdalam159@hotmail.com";
+
+        // companyName(email1);
+        // companyName(email2);
+
+        companyName2(email1);
+        companyName2(email2);
+
+        
+
+
+    }
+
+    public static void companyName(String email){
+        String emailArr[] = email.split("@");
+        String lastPart = emailArr[emailArr.length-1];
+        int dotIndex = lastPart.indexOf(".");
+        System.out.println(lastPart.substring(0, dotIndex));
+    }
+
+    public static void companyName2(String email){
+        int firstIdx = email.indexOf("@");
+        int lastIdx = email.indexOf(".");
+        System.out.println(email.substring(firstIdx+1, lastIdx));
     }
 }
