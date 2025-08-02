@@ -69,6 +69,7 @@ public class Lec_1 {
         int speed = Integer.parseInt(speedString);
         System.out.println("Enter isABSPresent: ");
         boolean isABSPresent = sc.nextBoolean();
+        sc.close();
 
         // initializing second object
         // Parameterized Constructor
@@ -81,6 +82,7 @@ public class Lec_1 {
 
         // Copy Constructor -> Deep Copy (To copy the values)
         Car obj3 = new Car(obj2);
+        obj3.drive();
         // System.out.println("Brand: " + obj3.brand);
         // System.out.println("Model: " + obj3.model);
         // System.out.println("Color: " + obj3.color);
@@ -88,12 +90,12 @@ public class Lec_1 {
         // System.out.println("isABSPresent: " + obj3.isABSPresent);
 
         // Same Referencing -> Shallow Copy (To copy the reference)
-        Car obj4 = obj2;
-        System.out.println(obj2.speed);
-        System.out.println(obj4.speed);
-        obj2.speed = 50;
-        System.out.println(obj2.speed);
-        System.out.println(obj4.speed);
+        // Car obj4 = obj2;
+        // System.out.println(obj2.speed);
+        // System.out.println(obj4.speed);
+        // obj2.speed = 50;
+        // System.out.println(obj2.speed);
+        // System.out.println(obj4.speed);
 
     }
     
