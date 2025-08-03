@@ -7,11 +7,13 @@ public class NestedClass {
         // obj.displayData();
         // innerObject.displayData();
 
+
         // Local Inner Class
         
         // OuterClass outer = new OuterClass();
         // outer.outerMethod();
 
+        
         // Anonymous Inner Class
 
         // NoName nn = new NoName() {

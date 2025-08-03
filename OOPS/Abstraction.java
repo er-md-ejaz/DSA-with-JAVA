@@ -51,6 +51,9 @@ abstract class HDFC extends Bank {
     HDFC(){
         System.out.println("Constructor of HDFC!");
     }
+
+    abstract void details();
+
     void print(){
         System.out.println("Hi HDFC!");
     }
@@ -60,4 +63,8 @@ class NewBank extends HDFC {
     int rateOfInterest(){
         return 7;
     }
+
+    void details(){
+        System.out.println("HDFC Details through NewBank");
+    }    
 }
